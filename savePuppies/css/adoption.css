@@ -1,0 +1,35 @@
+.container{
+	
+}
+
+.row{
+	
+}
+
+.col-md-3{
+	
+}
+
+.col-lg-12{
+
+}
+
+ul{
+	list-style-type:none;
+}
+
+li > p{
+	border-bottom:1px dashed #f2f2f2;
+}
+
+.dog_details{
+	background-color:#cccccc;
+	border-radius:8px;
+	padding:5%;
+}
+
+.adopter_details{
+	background-color:#cccccc;
+	border-radius:8px;
+	padding:5%;
+}

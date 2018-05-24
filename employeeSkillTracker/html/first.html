@@ -9,7 +9,22 @@
 	<title></title>
 	<!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-	
+	<style>
+		ul {
+			margin:auto;
+			padding:2pt;
+		}
+		li{
+			margin: 0;
+			border:1px solid #c0c0c0;
+			border-radius: 8px;
+			border-left: none;
+		}
+		li:hover{
+			background-color: #999999;
+			
+		}
+	</style>
 </head>
 <body>
 <div class="container">
@@ -18,16 +33,17 @@
 		
 		<!--Logo-->
 		<div class="navbar-header">
-			<a href="https://www.w3schools.com"><img  alt="W3Schools" src="../images/karikLogo Small.jpg" width="" height="80"></img>
+			<a href="#"><img  alt="LOGO" src="../images/karikLogo Small.jpg" width="" height="60"></img>
 			</a>
 		</div>
 		
 		<!--Menu items-->
 		<div>
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">What's this</a></li>
+				<li><a href="#">What's this</a></li>
 				<li><a href="#">About Us</a></li>
 				<li><a href="#">Contact Us</a></li>
+				<li><a href="">Login/logout</a></li>
 			</ul>
 		</div>
 		
@@ -35,5 +51,40 @@
 	</div>
 </nav>
 </div>
+	<div class="container">
+		<div class="row">
+				<div class="col col-md-6 col-sm-6 col-xs-10">
+					<h3 class="page-header text-center">Clerk Login Area</h3>
+					<form class="formDiv" method="post" action="http://localhost/savePuppies/php/clerk/clerkLogin.php">
+					<div class="form-group">
+						<label for="uname">Username:</label>
+						<input class="form-control" type="text" name="uname" placeholder="username"/>
+					</div>
+					<div class="form-group">
+						<label for="pwd">Password:</label>
+						<input class="form-control" type="password"  name="pwd" placeholder="password"/>
+					</div>
+					<input class="btn btn-default btn-lg btn-block" type="submit" name="loginSubmit" value="Sign in">
+					</form>
+			</div>
+			<div class="col col-md-6 col-sm-6 col-xs-10">
+                <div class="list-group">
+                    <a href="http://localhost/savePuppies/php/clerk/clerkWelcome.php" class="active list-group-item">Welcome</a>
+                    <a href="http://localhost/savePuppies/php/clerk/regAdopterForm.php" class="list-group-item">Register Adopter</a>
+                    <a href="http://localhost/savePuppies/php/clerk/searchAdopterForm.php" class="list-group-item">Search for Adopter by name</a>
+					<a href="http://localhost/savePuppies/php/clerk/adoptionForm.php" class="list-group-item">Record Adoption</a>
+					<a href="http://localhost/savePuppies/php/clerk/adoptionList.php" class="list-group-item">View dogs that can be adopted</a>
+                </div>
+            </div>
+		</div>
+		<div class="row">
+			<div class="card">
+				<img src="http://kariksystems.com/images/598_it.jpg" alt="Card Image" class="card-img-top">
+			</div>
+			<h5 class="card-title">What We Do</h5>
+			<p class="card-text">Sample TExt</p>
+		</div>
+	</div>
+
 
 </body>

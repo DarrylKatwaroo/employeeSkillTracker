@@ -1,0 +1,28 @@
+.post-content {
+	top: 30%;
+    left: 1%;
+    position: absolute;
+}
+
+.thumbnail_custom{
+    position:relative;
+	border:15px solid #eee;
+	border-radius:10px;
+
+}
+.jumbotron{
+	background-color:#333333;
+	color: white;
+	opacity:0.6;
+}
+
+#doggo{
+	font-size:10px;
+	color:#eee;
+}
+
+.footer{
+	background-color:#404040;
+	margin-top:5%;
+	color:white;
+}
